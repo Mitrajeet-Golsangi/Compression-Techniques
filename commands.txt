@@ -1,0 +1,43 @@
+-------------------------------- Huffman Encoding -----------------------------
+
+=> Execution
+
+cls;cd "d:\VIT Projects\Second Year\2nd Semester\SDP\Compressiong Techniques\src\Huffman\" ; if ($?) { g++ HufCompression.cpp huffman.cpp ..\file_handler.cpp -o HufCompression } ; if ($?) { .\HufCompression }; 
+
+=> Encoding
+
+.\HufCompression.exe -c ..\..\data\OriginalFile.txt ..\..\data\huffman\encoded.huf
+
+=> Decoding
+
+.\HufCompression.exe -c ..\..\data\huffman\encoded.huf ..\..\data\huffman\output.txt
+
+
+-------------------------------- Run Length Encoding -----------------------------
+
+=> Execution
+
+cls;cd "d:\VIT Projects\Second Year\2nd Semester\SDP\Compressiong Techniques\src\RunLength\" ; if ($?) { g++ RLECompression.cpp .\rle.cpp ..\file_handler.cpp -o RLECompression } ; if ($?) { .\RLECompression }; 
+
+=> Encoding
+
+.\RLECompression.exe -c ..\..\data\OriginalFile.txt ..\..\data\rle\encoded.rle
+
+=> Decoding
+
+.\RLECompression.exe -d ..\..\data\rle\encoded.rle ..\..\data\rle\output.txt
+
+
+-------------------------------- Arithmetic Encoding -----------------------------
+
+=> Execution
+
+cls; cd "d:\VIT Projects\Second Year\2nd Semester\SDP\Compressiong Techniques\src\Arithmetic\" ; if ($?) { g++ ArtEncoding.cpp .\arithmetic.cpp ..\file_handler.cpp -o ArtEncoding } ; if ($?) { .\ArtEncoding }; 
+
+=> Encoding
+
+.\ArtEncoding.exe -c ..\..\data\OriginalFile.txt ..\..\data\arithmetic\compressed.art
+
+=> Decoding
+
+.\ArtEncoding.exe -c ..\..\data\arithmetic\encoded.art ..\..\data\arithmetic\output.txt
